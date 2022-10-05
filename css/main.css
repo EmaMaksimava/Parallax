@@ -5,7 +5,7 @@
 }
 
 :root {
-
+  --index: calc(1vw + 1vh)
 }
 
 @font-face {
@@ -71,6 +71,19 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-weight: 900;
+  color: #e7e6d3;
+  text-shadow: 0 0 15px #d2cc14;
+}
+
+.layers__title {
+  font-size: calc(var(--index) * 2.5);
+  letter-spacing: calc(var(--index) / 2.5);
+}
+
+.layers__caption {
+  font-size: calc(var(--index) / 1.1);
+  letter-spacing: calc(var(--index) / 3.5);
+  margin-top: calc(var(--index) * -1);
 }
 
 .main-article {
