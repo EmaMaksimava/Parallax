@@ -6,31 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Parallax</title>
   <link rel="stylesheet" href="css/main.css">
+  <script src="libs/gsap/gsap.min.js" defer></script>
+  <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+  <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
 
-  <header class="main-header">
-    <div class="layers">
-      <div class="layers__header">
-        <div class="layers__caption">Welcome to parallax</div>
-        <div class="layers__title">Fairy Forest</div>
-      </div>
-      <div class="layer layers__base" style="background-image: url(img/layer-base.png) ;"></div>
-      <div class="layer layers__middle" style="background-image: url(img/layer-middle.png) ;"></div>
-      <div class="layer layers__front" style="background-image: url(img/layer-front.png) ;"></div>
+  <div class="wrapper">
+    <div class="container">
+
+      <header class="main-header">
+        <div class="layers">
+          <div class="layers__header">
+            <div class="layers__caption">Welcome to parallax</div>
+            <div class="layers__title">Fairy Forest</div>
+          </div>
+          <div class="layer layers__base" style="background-image: url(img/layer-base.png) ;"></div>
+          <div class="layer layers__middle" style="background-image: url(img/layer-middle.png) ;"></div>
+          <div class="layer layers__front" style="background-image: url(img/layer-front.png) ;"></div>
+        </div>
+
+
+      </header>
+
+      <article class="main-article" style="background-image: url(img/dungeon.jpg) ;">
+        <div class="main-article__content">
+          <h2 class="main-article__header">Into the Woods...</h2>
+          <p class="main-article__paragrapf">As the result of the curse of a once-beautiful witch (Meryl Streep), a baker (James Corden) and his wife (Emily Blunt) are childless. Three days before the rise of a blue moon, they venture into the forest to find the ingredients that will reverse the spell and restore the witch's beauty: a milk-white cow, hair as yellow as corn, a blood-red cape, and a slipper of gold. During their journey, they meet Cinderella, Little Red Riding Hood, Rapunzel and Jack, each one on a quest to fulfill a wish.</p>
+        </div>
+        <div class="copy">© Emma Maksimava</div>
+      </article>
     </div>
-
-
-  </header>
-
-  <article class="main-article" style="background-image: url(img/dungeon.jpg) ;">
-    <div class="main-article__content">
-      <h2 class="main-article__header">Into the Woods...</h2>
-      <p class="main-article__paragrapf">As the result of the curse of a once-beautiful witch (Meryl Streep), a baker (James Corden) and his wife (Emily Blunt) are childless. Three days before the rise of a blue moon, they venture into the forest to find the ingredients that will reverse the spell and restore the witch's beauty: a milk-white cow, hair as yellow as corn, a blood-red cape, and a slipper of gold. During their journey, they meet Cinderella, Little Red Riding Hood, Rapunzel and Jack, each one on a quest to fulfill a wish.</p>
-    </div>
-    <div class="copy">© Emma Maksimava</div>
-  </article>
+  </div>
 
 
 </body>
